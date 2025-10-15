@@ -12,7 +12,7 @@
 	
 networked computers
 
-B.2 구조와 특징
+# B.2 구조와 특징
 
 노드 = 실행 단위
 1 실행파일 : n 노드에 대응될 수 있음. 그러나 1:1 가정.
@@ -85,7 +85,7 @@ Action Servers:
 Action Clients:
 	..
 	
-B.3.3 ros 토픽
+# B.3.3 ros 토픽
 	구독자 노드는 발행자 노드들이 어느 컴퓨터에서 존재하는지, 어떤 UDP 포트를 사용하는지 몰라도 됨
 	발생자 또한 구독자에 대해 동일함.
 	컴퓨터 IP 주소와 UDP 포트 같은 저수준 통신 - DDS middleware가 관리
@@ -118,7 +118,7 @@ $ ros2 topic hz <토픽 이름>
 	토픽으로 지나가는 메시지들의 빈도를 hz 단위로  출력하라.
 	그 출력에서 나오는 average rate가 62hz이면 1초에 62개 메시지 지나간다는 뜻
 	
-B.3.4. ROS 파라미터
+# B.3.4. ROS 파라미터
 
 integer, float, boolean, string, list 같은 타입을 가질 수 있음
 
@@ -141,7 +141,7 @@ $ ros2 param load <노드 이름> <파일 이름>
 	$ ros2 run <노드 이름> <패키지 이름> --ros-args --params-file <파일 이름>
 	으로 실행했다면, 초기 파라미터 값을 넣어버릴 수 있다.
 	
-B.3.5. 토픽 저장과 재생
+# B.3.5. 토픽 저장과 재생
 
 $ ros2 bag record -o <rosbagname> <topic>
 
