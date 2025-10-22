@@ -192,6 +192,9 @@ collision models
 	get_vertices(pose, length, width)
 	
 gym environment : This is the top level file that conforms to the OpenAI gym convention.
+	https://github.com/openai/gym
+	강화학습하기 좋은 환경 컨벤션이 있나 봅니다.
+	
 	module f110_env
 	VIDEO_W = 600
 	VIDEO_H = 400
