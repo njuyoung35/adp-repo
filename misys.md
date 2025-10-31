@@ -45,3 +45,32 @@
 4.0K    ./lib32
 4.0K    ./games
 ```
+
+## /home/misys 구조 알아보기
+
+```
+5.4G    .
+1.7G    ./.local
+  ㄴ ~/.local/lib/python3.10에 파이썬 패키지들 설치되어 있음
+1.1G    ./Raceline-Optimization
+  ㄴ 이녀석 자체가 python3.8에 의존적이라서 ./raceline/lib/python3.8에 파이썬 패키지들 설치되어 있음 (983MB)
+  ㄴ 역할: 글로벌 경로 생성 (minimum curvature, time-optimal, friction map 등..)
+963M    ./f1tenth_ws
+812M    ./.cache
+712M    ./forza_ws
+214M    ./.vscode-server
+71M     ./.ros
+15M     ./f1tenth_gym
+204K    ./adp-ros-packages
+8.0K    ./.ssh
+8.0K    ./.rviz2
+8.0K    ./.config
+4.0K    ./shared_dir
+4.0K    ./.ipython
+4.0K    ./.gnupg
+```
+
+`colcon build` 실행 시
+
+- `/src` 디렉토리 기준으로 `/build`, `/install`, `/log` 디렉토리 생성 (일반적인 구조)
+- 또는 `~/forza_ws/racestack/`에 있는 패키지들 읽고 생성?
