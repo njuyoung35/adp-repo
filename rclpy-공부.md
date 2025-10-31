@@ -203,5 +203,3 @@ use std_msgs::msg::String as StringMsg;
 ```
 
 러스트는 패키지, 노드, 심지어 workspace?까지도 넘나들며 메시지들의 타입을 정적으로 검사하는 것으로 보인다. with rosidl\_generator\_rs + rosidl\_runtime\_rs
-
-지금 ros::example\_interfaces에 문제가 있는 것으로 보이는데 이름에 'example'이 들어가지만 중요한 것이라고 하는 것으로 보임
